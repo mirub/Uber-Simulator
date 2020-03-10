@@ -1,0 +1,70 @@
+Name: Banu Miruna Elena
+Group: 311CA
+
+Task 1:
+
+I have implemented the structures I needed: the hastable and the
+graph. I have set the hashtable as a list and I created some
+functions that add, delete and show the elements it contains
+using the name of the intersection as a key and the index of it
+upon reading as the corresponding value. For the graph, I have
+also made it as a list and the nodes are the same type as the
+value of the elements in the hashtable.
+
+I have read from the file the elements I needed to create roads
+between and did so using the function from both structures. 
+Finally, I have implemented the BFS algorithm for the graph
+and used it to check whether there is a way between the 2 given
+nodes.
+
+Task 2:
+
+Using the same BFS function from the previous task I have
+calculated the shortest distance between the two crossroads
+that have been given.
+
+Task 3:
+
+I have read the queries and, depending on the first character of
+the line and the digit, I have implemented the addition/deletion
+of the roads between the given crossroads or the print of the
+distances required.
+
+Task 4:
+
+I have implemented a class that contains the details of a driver
+and another one that contains a vector of the type previous class.
+I have also implemented certain methods that add/delete/change
+the features of the driver.
+
+To check whether there is a driver in the proximity of the start
+node, I have implemented another neighbour function that returns
+the nodes that have a road between them and another given node.
+I have used it to calculate the distance between the start and 
+the other nodes. Then I calculated the minimum distance between
+the start node and the nodes that have a driver located in the
+corresponding intersection. I have checked which driver is the
+one that would pick up the ride and returned it and the distance
+from the start.
+
+To check whether there is a way between the start and the desti-
+nation node I have used the BFS algorithm. In case there was not
+a way between them, I have checked whether there is a way between
+the start and the neighbours of the destination node. I have
+returned the destination node and the distance from the start.
+
+I have changed, if it was the case, the location, distance and the
+rating of the driver that does the ride.
+
+For the other queries, I have implemented functions that sort
+according to the requirement and I have changed the status/location
+according to the commands read.
+
+Task 5:
+
+I have used the BFS function to find the distances between the
+location of the driver and the other intersections then sorted
+them increasingly. I have printed the intersections that the 
+driver can reach by printing the name of it while the distance
+was smaller than the fuel.
+ 
